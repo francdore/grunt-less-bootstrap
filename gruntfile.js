@@ -104,6 +104,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
 
     // Tasks
-    grunt.registerTask('default', ['less', 'concat', 'cssmin:production', 'uglify', 'copy:fonts', 'clean', 'imagemin', 'watch']);
-    grunt.registerTask('build', ['less', 'copy', 'concat', 'imagemin', 'uglify', 'cssmin:production', 'clean', 'watch']);
+    grunt.registerTask('default', ['less', 'concat', 'cssmin:production', 'uglify', 'copy:fonts', 'clean', 'watch']);
+    grunt.registerTask('build', ['less', 'copy', 'concat', 'uglify', 'cssmin:production', 'clean', 'watch']);
 };
