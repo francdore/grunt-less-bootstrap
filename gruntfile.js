@@ -18,16 +18,6 @@ module.exports = function(grunt) {
                 }
             }
         },
-        imagemin: {
-            dynamic: {
-                files: [{
-                    expand: true,
-                    cwd: './src/images/',
-                    src: ['**/*.{png,jpg,gif,svg}'],
-                    dest: 'images/'
-                }]
-            }
-        },
         copy: {
             fonts: {
                 expand: true,
@@ -78,10 +68,6 @@ module.exports = function(grunt) {
                 files: ['./src/less/**/*'],
                 tasks: ['less', 'cssmin', 'clean']
             },
-            imagemin: {
-                files: ['./src/images/**/*.{png,jpg,gif}'],
-                tasks: ['imagemin']
-            },
             fonts: {
                 files: ['./src/fonts/**/*'],
                 tasks: ['copy']
@@ -99,7 +85,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-concat');
 
