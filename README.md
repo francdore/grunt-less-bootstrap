@@ -14,4 +14,4 @@ Just install git bash and then right click inside the folder when your grunt.js 
 
 Then run the command "grunt". This will compile all of the bootstrap Less, Bootstaps Javascript, your custom Less that overrides the main Bootstrap styles and your Javascript file with your custom scripts.
 
-If you have any questions, send me a message at http://ww.mustache.co.za
+If you have any questions, send me a message at http://www.mustache.co.za
