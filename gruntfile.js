@@ -8,6 +8,11 @@ module.exports = function(grunt) {
                 files: {
                     "tmp/styles.css": "./src/less/custom.less"
                 }
+            },
+            ie8: {
+                files: {
+                    "css/ie8.min.css": "source/less/ie8.less"
+                }
             }
         },
         cssmin: {
@@ -43,7 +48,8 @@ module.exports = function(grunt) {
                     './node_modules/bootstrap/js/popover.js',
                     './node_modules/bootstrap/js/scrollspy.js',
                     './node_modules/bootstrap/js/tab.js',
-                    './node_modules/bootstrap/js/affix.js'
+                    './node_modules/bootstrap/js/affix.js',
+                    './src/js/isotope.pkgd.js'
                 ],
                 dest: 'tmp/scripts.js',
             },
